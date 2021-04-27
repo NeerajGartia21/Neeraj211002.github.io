@@ -1,0 +1,101 @@
+.about {
+    p {
+        line-height: 28px;
+        color: hsl(0, 0%, 48%);
+    }
+    #abthead {
+        padding: 35px 0px;
+        font-weight: 1000;
+        @media only screen and (max-width: 1000px) {
+            font-size: 28px;
+            align-items: flex-start;
+        }
+    }
+    #headp {
+        padding-top: 30px;
+    }
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: 0px 0px 0px 2.5px rgb(238, 236, 236);
+    border-radius: 8px;
+    position: relative;
+    transform: translateY(-6vh);
+    background: white;
+    padding: 30px 40px;
+    @media only screen and (max-width: 1000px) {
+        width: 90%;
+        transform: translateY(-6vh);
+        padding: 15px;
+    }
+    .bs {
+        border: 1px solid rgb(207, 207, 207);
+        border-radius: 8px;
+        padding: 0px 20px;
+        margin-top: 40px;
+        @media only screen and (max-width: 1000px) {
+            padding: 15px;
+        }
+        .bshead {
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 1000;
+            #cyan {
+                color: hsl(176, 50%, 47%);
+            }
+            h1 {
+                font-size: 23px;
+            }
+            @media only screen and (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .last {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+            @media only screen and (max-width: 1000px) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            button {
+                color: white;
+                background-color: hsl(176, 50%, 47%);
+                border-radius: 50px;
+                width: 180px;
+                border-style: none;
+                font-size: 15px;
+                font-weight: bold;
+                margin-right: 5PX;
+                height: 47px;
+                position: relative;
+                &:hover {
+                    background-color: hsl(176, 72%, 28%);
+                }
+            }
+            #handp {
+                display: flex;
+                align-items: center;
+                h1 {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    #ofs {
+        button {
+            background-color: hsl(0, 0%, 48%);
+        }
+        opacity: 0.5;
+    }
+    #cyan {
+        font-size: 105%;
+    }
+}

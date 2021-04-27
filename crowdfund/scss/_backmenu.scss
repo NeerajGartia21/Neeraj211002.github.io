@@ -1,0 +1,45 @@
+.backmenu {
+    position: absolute;
+    background: white;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    .backhead {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+            padding: 10px;
+        }
+    }
+    a {
+        display: block;
+        filter: invert(60%);
+        &:hover {
+            filter: invert(100%);
+        }
+    }
+    button {
+        height: 24px;
+        width: 24px;
+        clip-path: circle(10px);
+    }
+}
+
+.overlay2 {
+     ::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: linear-gradient( rgb(0, 0, 0));
+        z-index: 5;
+        opacity: 0.1;
+        height: 2000px;
+        @media only screen and (max-width: 1000px) {
+            opacity: 0.2;
+        }
+    }
+}

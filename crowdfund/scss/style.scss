@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Commissioner', sans-serif;
+    p {
+        color: hsl(0, 0%, 48%);
+    }
+}
+
+@import "header";
+@import "mbmr";
+@import "reset";
+@import "proback";
+@import "about";
+@import "backmenu";
+@import "thankscard";
