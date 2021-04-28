@@ -44,7 +44,7 @@ header::before {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: url(/img/image-hero-desktop.jpg);
+  background: url(../img/image-hero-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
@@ -52,7 +52,7 @@ header::before {
 
 @media only screen and (max-width: 1000px) {
   header::before {
-    background: url(/img/image-hero-mobile.jpg);
+    background: url(../img/image-hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
