@@ -44,7 +44,7 @@ header::before {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: url(../img/image-hero-desktop.jpg);
+  background: url(/img/image-hero-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -2;
@@ -52,7 +52,7 @@ header::before {
 
 @media only screen and (max-width: 1000px) {
   header::before {
-    background: url(../img/image-hero-mobile.jpg);
+    background: url(/img/image-hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -132,7 +132,8 @@ header .menubox {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-radius: 10px;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 
 header .menubox li {
@@ -161,7 +162,7 @@ header .menubox hr {
   bottom: 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
   background: linear-gradient(black, transparent);
-  z-index: -1;
+  z-index: 1;
   opacity: 0.3;
 }
 
@@ -586,7 +587,7 @@ h4 {
   bottom: 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(black));
   background: linear-gradient(black);
-  z-index: 5;
+  z-index: 3;
   opacity: 0.1;
   height: 2000px;
 }
