@@ -20,6 +20,8 @@ hamburger.addEventListener('click', function() {
         hamburger.classList.add('open');
         menu.classList.add('overlay');
         menubox.classList.remove('hasfade');
+        body.classList.add('noscroll');
+
 
 
 
@@ -28,6 +30,7 @@ hamburger.addEventListener('click', function() {
         hamburger.classList.remove('open');
         menu.classList.remove('overlay');
         menubox.classList.add('hasfade');
+        body.classList.remove('noscroll');
 
 
 
