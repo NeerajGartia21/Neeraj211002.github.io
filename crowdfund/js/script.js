@@ -99,17 +99,19 @@ thnxclose.addEventListener('click', function() {
 bookmark.addEventListener('click', function() {
 
 
-
+    if (!thanks.classList.contains('open')) {
+        thanks.classList.add('open');
         document.getElementById("bkmrkh").innerHTML = "Bookmarked";
         document.getElementById("bkmrkh").style.color = "hsl(176, 72%, 28%)";
+        bookmark.getElementsByTagName("circle")[0].style.fill = "hsl(176, 50%, 47%)";
+        bookmark.getElementsByTagName("path")[0].style.fill = "white";
+    } else {
+        thanks.classList.remove('open');
 
-    })
-    // document.querySelector('#brdrbtn').addEventListener('click', function() {
-    //     if (!menubox.classList.contains('open')) {
-    //         menubox.classList.add('open');
-    //         document.querySelector('.bs').style.border = "2px solid hsl(176, 72%, 28%)";
-    //     } else {
-    //         menubox.classList.remove('open');
-    //         document.querySelector('.bs').style.border = "1px solid rgb(207, 207, 207)";
-    //     }
-    // })
+        document.getElementById("bkmrkh").innerHTML = "Bookmark";
+        document.getElementById("bkmrkh").style.color = "hsl(0, 0%, 48%)";
+        bookmark.getElementsByTagName("circle")[0].style.fill = "#2F2F2F";
+        bookmark.getElementsByTagName("path")[0].style.fill = "#B1B1B1";
+    }
+
+})
