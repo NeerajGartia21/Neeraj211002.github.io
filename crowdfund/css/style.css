@@ -580,7 +580,7 @@ h4 {
 
 .overlay2 ::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -589,7 +589,7 @@ h4 {
   background: linear-gradient(black);
   z-index: 3;
   opacity: 0.1;
-  height: 2000px;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -657,5 +657,10 @@ h4 {
 
 .thanks button:hover {
   background-color: #147b74;
+}
+
+.noscroll {
+  position: fixed;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

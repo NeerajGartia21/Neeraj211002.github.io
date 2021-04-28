@@ -9,6 +9,7 @@ const thanksbtn = document.querySelector('.thanksbtn');
 const thanksbtn2 = document.querySelector('.thanksbtn2');
 const thanks = document.querySelector('.thanks');
 const thnxclose = document.querySelector('#thnxclose');
+const body = document.querySelector('.body');
 
 
 hamburger.addEventListener('click', function() {
@@ -67,6 +68,7 @@ thanksbtn.addEventListener('click', function() {
         thanks.classList.add('open');
         menu.classList.add('overlay2');
         thanks.classList.remove('hasfade');
+        body.classList.add('noscroll');
     }
 
 })
@@ -76,6 +78,7 @@ thanksbtn2.addEventListener('click', function() {
         thanks.classList.add('open');
         menu.classList.add('overlay2');
         thanks.classList.remove('hasfade');
+        body.classList.add('noscroll');
     }
 
 })
@@ -86,6 +89,7 @@ thnxclose.addEventListener('click', function() {
         thanks.classList.remove('open');
         menu.classList.remove('overlay2');
         thanks.classList.add('hasfade');
+        body.classList.remove('noscroll');
     }
 
 })
@@ -93,16 +97,16 @@ bookmark.addEventListener('click', function() {
 
 
 
-    document.getElementById("bkmrkh").innerHTML = "Bookmarked";
-    document.getElementById("bkmrkh").style.color = "hsl(176, 72%, 28%)";
+        document.getElementById("bkmrkh").innerHTML = "Bookmarked";
+        document.getElementById("bkmrkh").style.color = "hsl(176, 72%, 28%)";
 
-})
-document.querySelector('#brdrbtn').addEventListener('click', function() {
-    if (!menubox.classList.contains('open')) {
-        menubox.classList.add('open');
-        document.querySelector('.bs').style.border = "2px solid hsl(176, 72%, 28%)";
-    } else {
-        menubox.classList.remove('open');
-        document.querySelector('.bs').style.border = "1px solid rgb(207, 207, 207)";
-    }
-})
+    })
+    // document.querySelector('#brdrbtn').addEventListener('click', function() {
+    //     if (!menubox.classList.contains('open')) {
+    //         menubox.classList.add('open');
+    //         document.querySelector('.bs').style.border = "2px solid hsl(176, 72%, 28%)";
+    //     } else {
+    //         menubox.classList.remove('open');
+    //         document.querySelector('.bs').style.border = "1px solid rgb(207, 207, 207)";
+    //     }
+    // })
