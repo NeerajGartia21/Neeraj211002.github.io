@@ -10,6 +10,7 @@ const thanksbtn2 = document.querySelector('.thanksbtn2');
 const thanks = document.querySelector('.thanks');
 const thnxclose = document.querySelector('#thnxclose');
 const body = document.querySelector('.body');
+const brdrbtn = document.querySelector('#brdrbtn');
 
 
 hamburger.addEventListener('click', function() {
@@ -115,3 +116,15 @@ bookmark.addEventListener('click', function() {
     }
 
 })
+
+function border1() {
+    document.getElementsByClassName("bs")[0].style.border = "2px solid hsl(176, 72%, 28%)";
+}
+
+function border2() {
+    document.getElementsByClassName("bs")[1].style.border = "2px solid hsl(176, 72%, 28%)";
+}
+
+function border3() {
+    document.getElementsByClassName("bs")[2].style.border = "2px solid hsl(176, 72%, 28%)";
+}
