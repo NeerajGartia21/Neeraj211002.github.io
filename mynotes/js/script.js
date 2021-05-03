@@ -6,19 +6,26 @@ shownotes();
 
 
   addbtn.addEventListener("click", function (e) {
+    if(addtitle.value.length==0){
+     
+      alert("Please add a note");
+    }
+    else if(addtxt.value.length==0)
+    {
+      alert("Please adda a description.");
+    }
+    else{
+
     
     var notes = localStorage.getItem("notes");
     var notestitle = localStorage.getItem("notestitle");
-    //debugger
 
     if (notes == null) {
       notesObj = [];
       notestitleObj = [];
-      //debugger
     } else {
       notesObj = JSON.parse(notes);
       notestitleObj = JSON.parse(notestitle);
-      // debugger
     }
     notesObj.push(addtxt.value);
     notestitleObj.push(addtitle.value);
@@ -28,8 +35,10 @@ shownotes();
     addtitle.value = "";
 
     shownotes();
+    }
 
   });
+
 
 
 function shownotes() {
