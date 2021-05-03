@@ -23,7 +23,7 @@
               </li>
             </ul>
             <form class="d-flex">
-              <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input id="search" class="form-control me-2" type="search" placeholder="Search Title" aria-label="Search">
             </form>
           </div>
         </div>
@@ -34,9 +34,15 @@
         </h1>
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Add a Note</h5>
+                <h4 class="card-title">Add a Note</h4>
+                <div class="mb-3 my-3">
+                     <h6>Title</h6>
+                    <textarea class="form-control" id="addtitle" rows="2"></textarea>
+                </div>
+
                 <div class="mb-3">
-                    <textarea class="form-control" id="addtxt" rows="3"></textarea>
+                  <h6>Description</h6>
+                    <textarea class="form-control" id="addtxt" rows="4"></textarea>
                 </div>
                 <button id="addbtn" class="btn btn-primary"> Add note</button>
             </div>
@@ -45,7 +51,7 @@
         <h1>Your notes</h1>
         <hr>
         <div class="notelist row" id="notes">
-            
+  
         </div>
     </div>
 </body>
