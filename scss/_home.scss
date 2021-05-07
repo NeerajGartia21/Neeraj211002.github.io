@@ -1,0 +1,35 @@
+.home{
+    display: none;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    position: fixed;
+    left: 200px;
+    
+    width: 80%;
+    
+    h1{
+        font-size: 80px;
+        line-height: 0.6;
+    }
+    
+    img{
+        width: 650px;
+        position: relative;
+        bottom: 20px;
+        right: 30px;
+        
+    }
+    .content{
+      
+        a{
+            text-decoration: none;
+            color: white;
+            border: 2px solid rgb(0, 255, 255);
+            font-size: 30px;
+            padding: 5px;
+            
+        }
+    }
+}

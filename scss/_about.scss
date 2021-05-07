@@ -1,0 +1,38 @@
+.about{
+    margin: auto;
+    display: none;
+    color: white;
+    justify-content: center;
+    position: fixed;
+    left: 200px;
+    align-items: center;
+    height: 100vh;
+    column-gap: 50px;
+    width: 80%;
+    font-family: 'Baloo Bhai 2', cursive;
+    .content{
+       margin:100px;
+        h1{
+            font-size: 70px;
+           
+        }
+        h2{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 24px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            padding: 0px;
+        }
+        a{
+            border: 2px solid cyan;
+            padding: 10px;
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+            
+        }
+    } 
+   }

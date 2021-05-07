@@ -1,0 +1,38 @@
+@import "variable";
+@import "home";
+@import "header";
+@import "about";
+@import "classes";
+@import "skills";
+@import "projects";
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lexend Deca', sans-serif;
+  &::before {
+    content: "";
+    background: linear-gradient(#18223b);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -9;
+    opacity: 0.6;
+  }
+  &::after {
+    content: "";
+    background: url(../img/167479.jpg);
+    background-position: left;
+    transform: scaleX(-1);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -10;
+  }
+}
