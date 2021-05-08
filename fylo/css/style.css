@@ -42,7 +42,7 @@ header {
 .introduction:before {
     content: "";
     position: absolute;
-    background: url(/img/bg-curvy-desktop.svg) no-repeat center/cover;
+    background: url(./img/bg-curvy-desktop.svg) no-repeat center/cover;
     top: 550px;
     left: 0px;
     right: 0px;
@@ -170,7 +170,7 @@ header {
 }
 
 .cmnts::before {
-    content: url(/img/bg-quotes.png);
+    content: url(./img/bg-quotes.png);
     position: relative;
     left: 73px;
     top: -5px;
