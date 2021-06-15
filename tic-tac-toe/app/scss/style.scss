@@ -1,0 +1,40 @@
+.box{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+button{
+  color: black;
+  background-color: darkcyan;
+  font-weight: bold;
+  border-radius: 50px;
+font-size: 1rem;
+padding: 0.5rem;
+box-sizing: border-box;
+}
+#Turn{
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.container{
+
+    display: grid;
+  grid-template-columns: 5rem 5rem 5rem;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+    >div{
+        width: 5rem;
+        color:red;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        background-color: cyan;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+}
+}
