@@ -28,9 +28,7 @@ turn=target.innerText;
 document.getElementById('Turn').innerHTML='';
 document.querySelector('.container').innerHTML=html;
 if(turn=='Computer'){
-    let nextO = document.getElementById(
-        remaining[Math.floor(Math.random() * remaining.length)]
-    );
+    let nextO = document.getElementById('1');
     currentO.push(nextO.id);
     nextO.innerHTML = "O";
     nextO.style.color = "red";
@@ -109,6 +107,10 @@ function vsComputer(target) {
         return;
     }
     target.removeAttribute("onclick");
+    if(remaining.length==0){
+        alert("Match Drawn");
+        reset();
+    }
 }
 
 function check_sub_array(superarr, subarr) {
@@ -125,11 +127,11 @@ function checkStatus() {
     let flag = 0;
     for (let i = 0; i < Winning.length; i++) {
         if (check_sub_array(currentX, Winning[i]).length == 0) {
-            alert("winner is X");
+            alert("YOU WON");
             flag++;
             break;
         } else if (check_sub_array(currentO, Winning[i]).length == 0) {
-            alert("winner is O");
+            alert("COMPUTER OWN");
             flag++;
             break;
         }
